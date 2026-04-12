@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Andrew personal profile website">
+  <title>Andrew</title>
+  <script>
+    document.documentElement.classList.remove("no-js");
+    document.documentElement.classList.add("js");
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Andrew home">
+      <span class="logo-bracket">&lt;</span>andrew<span class="logo-bracket">/&gt;</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <a href="https://blog.andrew.my.id/">Blog</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">$ whoami</p>
+        <h1>Andrew <span class="accent">Software Engineer</span></h1>
+        <p class="lead">
+          "Better to ask and be a fool once than never to ask and be a fool 4ever."
+        </p>
+        <div class="hero-actions">
+          <div class="contact-links">
+            <a href="mailto:hi@andrew.my.id" aria-label="Email">
+              <i class="fa-regular fa-envelope icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/iniandrew" aria-label="GitHub profile">
+              <i class="fa-brands fa-github icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://linkedin.com/in/chrisdion-andrew" aria-label="LinkedIn profile">
+              <i class="fa-brands fa-linkedin-in icon" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <aside class="terminal-card" aria-label="Profile highlights">
+        <div class="terminal-header">
+          <span></span><span></span><span></span>
+          <p>profile.sh</p>
+        </div>
+        <pre><code><span class="dim"># quick stats</span>
+role="Software Engineer"
+focus=("Backend Development" "APIs" "Automation")
+location="Indonesia"
+experience="3+ years"
+</code></pre>
+      </aside>
+    </section>
+
+    <section id="about" class="section reveal">
+      <p class="eyebrow">01 / About</p>
+      <h2>Summary</h2>
+      <p>
+        Backend focused Web Developer with 3+ years of professional experience in designing, developing, and maintaining
+        web applications. Strong expertise in Laravel Framework, backend development, API development and integration,
+        database management, and Linux environments. Knowledgeable in mobile development and web penetration testing.
+        Experienced in collaborative development, version control using Git, and Agile/Scrum methodologies.
+      </p>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <p class="eyebrow">02 / Skills</p>
+      <h2>Skills</h2>
+      <div class="chip-grid" role="list" aria-label="Skill tags">
+        <span class="chip" role="listitem">Laravel</span>
+        <span class="chip" role="listitem">Flutter</span>
+        <span class="chip" role="listitem">Node.js</span>
+        <span class="chip" role="listitem">Go</span>
+        <span class="chip" role="listitem">REST API</span>
+        <span class="chip" role="listitem">Docker</span>
+        <span class="chip" role="listitem">Linux</span>
+        <span class="chip" role="listitem">Git</span>
+        <span class="chip" role="listitem">Data Mining</span>
+        <span class="chip" role="listitem">MySQL / PostgreSQL</span>
+        <span class="chip" role="listitem">Testing / Observability</span>
+        <span class="chip" role="listitem">Web Penetration Testing</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Andrew. Built with <3 </p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
