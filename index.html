@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Andrew personal profile website">
+  <meta name="description"
+    content="Andrew — Software Engineer specializing in backend systems, APIs, and cloud infrastructure.">
   <title>Andrew</title>
   <script>
     document.documentElement.classList.remove("no-js");
@@ -16,6 +17,9 @@
 </head>
 
 <body>
+  <div class="orb orb-teal" aria-hidden="true"></div>
+  <div class="orb orb-blue" aria-hidden="true"></div>
+
   <header class="site-header">
     <a class="logo" href="#home" aria-label="Andrew home">
       <span class="logo-bracket">&lt;</span>andrew<span class="logo-bracket">/&gt;</span>
@@ -27,79 +31,250 @@
       <span></span>
     </button>
     <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#connect">Contact</a>
       <a href="https://blog.andrew.my.id/">Blog</a>
     </nav>
   </header>
 
   <main id="home">
     <section class="hero reveal">
-      <div class="hero-copy">
+      <div class="hero-copy glass">
         <p class="eyebrow">$ whoami</p>
-        <h1>Andrew <span class="accent">Software Engineer</span></h1>
+        <h1>Andrew <span class="gradient-text">Software Engineer</span></h1>
         <p class="lead">
-          "Better to ask and be a fool once than never to ask and be a fool 4ever."
+          Building robust backends and elegant APIs. Passionate about clean architecture,
+          developer experience, and systems that scale.
         </p>
         <div class="hero-actions">
-          <div class="contact-links">
-            <a href="mailto:hi@andrew.my.id" aria-label="Email">
-              <i class="fa-regular fa-envelope icon" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/iniandrew" aria-label="GitHub profile">
-              <i class="fa-brands fa-github icon" aria-hidden="true"></i>
-            </a>
-            <a href="https://linkedin.com/in/chrisdion-andrew" aria-label="LinkedIn profile">
-              <i class="fa-brands fa-linkedin-in icon" aria-hidden="true"></i>
-            </a>
-          </div>
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+            View Projects
+          </a>
+          <a href="#connect" class="btn btn-ghost">
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            Contact Me
+          </a>
         </div>
       </div>
-      <aside class="terminal-card" aria-label="Profile highlights">
-        <div class="terminal-header">
-          <span></span><span></span><span></span>
-          <p>profile.sh</p>
-        </div>
-        <pre><code><span class="dim"># quick stats</span>
-role="Software Engineer"
-focus=("Backend Development" "APIs" "Automation")
-location="Indonesia"
-experience="3+ years"
-</code></pre>
-      </aside>
+      <div class="hero-abstract" aria-hidden="true">
+        <div class="abstract-orb abstract-orb-1"></div>
+        <div class="abstract-orb abstract-orb-2"></div>
+        <div class="abstract-orb abstract-orb-3"></div>
+      </div>
     </section>
 
     <section id="about" class="section reveal">
-      <p class="eyebrow">01 / About</p>
-      <h2>Summary</h2>
-      <p>
-        Backend focused Web Developer with 3+ years of professional experience in designing, developing, and maintaining
-        web applications. Strong expertise in Laravel Framework, backend development, API development and integration,
-        database management, and Linux environments. Knowledgeable in mobile development and web penetration testing.
-        Experienced in collaborative development, version control using Git, and Agile/Scrum methodologies.
-      </p>
+      <div class="section-inner glass">
+        <p class="eyebrow">01 / About</p>
+        <h2>About Me</h2>
+        <p>
+          I'm a software engineer with 3+ years of professional experience designing,
+          developing, and maintaining web applications. My core strength is backend
+          development, especially building systems that support real business needs without
+          becoming difficult to maintain.
+        </p>
+        <p style="margin-top: 1rem;">
+          I work primarily with Laravel, Node.js, SQL databases, Docker, and Linux-based
+          environments. I also have experience with mobile development, testing, observability,
+          and web security, which helps me think beyond just writing code and focus on how
+          systems behave in production.
+        </p>
+        <p style="margin-top: 1rem;">
+          I care about clean architecture, thoughtful problem-solving, and building software
+          that stays useful as it grows.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="section reveal">
+      <div class="section-inner glass">
+        <p class="eyebrow">02 / What I Do</p>
+        <h2>What I Do</h2>
+        <ul class="service-list">
+          <li class="service-item">
+            <span>Build backend systems and REST APIs</span>
+          </li>
+          <li class="service-item">
+            <span>Develop web applications with maintainable architecture</span>
+          </li>
+          <li class="service-item">
+            <span>Design application flows and database structures</span>
+          </li>
+          <li class="service-item">
+            <span>Deploy and support services in Linux environments</span>
+          </li>
+          <li class="service-item">
+            <span>Improve reliability through testing, observability, and operational awareness</span>
+          </li>
+          <li class="service-item">
+            <span>Contribute to secure, production-ready software delivery</span>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="skills" class="section reveal">
-      <p class="eyebrow">02 / Skills</p>
-      <h2>Skills</h2>
-      <div class="chip-grid" role="list" aria-label="Skill tags">
-        <span class="chip" role="listitem">Laravel</span>
-        <span class="chip" role="listitem">Flutter</span>
-        <span class="chip" role="listitem">Node.js</span>
-        <span class="chip" role="listitem">Go</span>
-        <span class="chip" role="listitem">REST API</span>
-        <span class="chip" role="listitem">Docker</span>
-        <span class="chip" role="listitem">Linux</span>
-        <span class="chip" role="listitem">Git</span>
-        <span class="chip" role="listitem">Data Mining</span>
-        <span class="chip" role="listitem">MySQL / PostgreSQL</span>
-        <span class="chip" role="listitem">Testing / Observability</span>
-        <span class="chip" role="listitem">Web Penetration Testing</span>
+      <div class="section-inner glass">
+        <p class="eyebrow">03 / Skills</p>
+        <h2>Skills</h2>
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h4>Web Development</h4>
+            <div class="chip-grid" role="list">
+              <span class="chip" role="listitem">Laravel</span>
+              <span class="chip" role="listitem">Node.js</span>
+              <span class="chip" role="listitem">Go</span>
+              <span class="chip" role="listitem">VueJS</span>
+              <span class="chip" role="listitem">Python</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Mobile Development</h4>
+            <div class="chip-grid" role="list">
+              <span class="chip" role="listitem">Flutter</span>
+              <span class="chip" role="listitem">Kotlin</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Infrastructure</h4>
+            <div class="chip-grid" role="list">
+              <span class="chip" role="listitem">Docker</span>
+              <span class="chip" role="listitem">Linux</span>
+              <span class="chip" role="listitem">MySQL</span>
+              <span class="chip" role="listitem">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Other's</h4>
+            <div class="chip-grid" role="list">
+              <span class="chip" role="listitem">Git</span>
+              <span class="chip" role="listitem">UI/UX</span>
+              <span class="chip" role="listitem">Testing</span>
+              <span class="chip" role="listitem">Observability</span>
+              <span class="chip" role="listitem">Agile / Scrum</span>
+              <span class="chip" role="listitem">Web Penetration Testing</span>
+              <span class="chip" role="listitem">Sentiment Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="section-inner glass">
+        <p class="eyebrow">04 / Projects</p>
+        <h2>Some of My Professional Projects</h2>
+        <div class="project-slider">
+          <div class="project-track">
+            <article class="project-card glass">
+              <h3>Broadcaster</h3>
+              <p>A Go service for multi-channel notification delivery and provider integrations. </p>
+              <div class="project-meta">
+                <span><strong>Stack:</strong> Go, Fiber, Docker</span>
+                <span><strong>Role:</strong> Backend Development, API Design</span>
+              </div>
+            </article>
+            <article class="project-card glass">
+              <h3>School Information Management</h3>
+              <p>A web application that provides complete school management capabilities including student affairs,
+                academic management, finance, new student registration, and more.</p>
+              <div class="project-meta">
+                <span><strong>Stack:</strong> PHP, Laravel, Vue.js, Docker</span>
+                <span><strong>Role:</strong> Backend Development, Frontend Integration, Deployment</span>
+              </div>
+            </article>
+            <article class="project-card glass">
+              <h3>Sales Activity Performance Monitoring</h3>
+              <p>A web application for monitoring and analyzing sales activities and performance metrics.</p>
+              <div class="project-meta">
+                <span><strong>Stack:</strong> PHP, Laravel, Vue.js, Docker</span>
+                <span><strong>Role:</strong> Full-stack Collaboration</span>
+              </div>
+            </article>
+            <article class="project-card glass">
+              <h3>Learning Management System</h3>
+              <p>A web application for managing and delivering educational content and tracking student progress.</p>
+              <div class="project-meta">
+                <span><strong>Stack:</strong> PHP, Laravel, Vue.js, Docker</span>
+                <span><strong>Role:</strong> Full-stack Collaboration</span>
+              </div>
+            </article>
+            <article class="project-card glass">
+              <h3>Human Resources Management System</h3>
+              <p>A web application and mobile application for managing employee information, payroll, and other
+                HR-related tasks.</p>
+              <div class="project-meta">
+                <span><strong>Stack:</strong> PHP, Laravel, Vue.js, Flutter, Docker</span>
+                <span><strong>Role:</strong> Full-stack Collaboration, Mobile Development, API Integration</span>
+              </div>
+            </article>
+            <article class="project-card glass">
+              <h3>Payment Integration</h3>
+              <p>A project that focuses on integration open API's from providers to internal systems.</p>
+              <div class="project-meta">
+                <span><strong>Stack:</strong> PHP, Laravel, Docker</span>
+                <span><strong>Role:</strong> Backend Development, API Integration</span>
+              </div>
+            </article>
+          </div>
+          <div class="slider-controls">
+            <button class="slider-btn prev" aria-label="Previous project">
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="slider-dots"></div>
+            <button class="slider-btn next" aria-label="Next project">
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="philosophy" class="section reveal">
+      <div class="section-inner glass">
+        <p class="eyebrow">05 / Philosophy</p>
+        <h2>Quote</h2>
+        <blockquote>
+          <p>"Better to ask and be a fool once than never to ask and be a fool forever. - Unknown"</p>
+        </blockquote>
+        <p>
+          I value clarity, curiosity, and practical execution. I believe good engineering is
+          not only about writing code, but about asking the right questions, making sensible
+          decisions, and building systems that people can rely on.
+        </p>
+      </div>
+    </section> -->
+
+    <section id="connect" class="section reveal">
+      <div class="section-inner glass">
+        <p class="eyebrow">05 / Let's Connect</p>
+        <h2>Let's Connect</h2>
+        <p>
+          I'm always open to new opportunities, collaborations, or just chatting about tech. Feel free to reach out
+          through any of the platforms below.
+        </p>
+        <div class="contact-grid">
+          <a href="https://github.com/iniandrew" class="contact-item glass">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/chrisdion-andrew" class="contact-item glass">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:hi@andrew.my.id" class="contact-item glass">
+            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+            <span>Email</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Andrew. Built with <3 </p>
+    <p>&copy; <span id="year"></span> Andrew.</p>
   </footer>
 
   <script src="script.js" defer></script>
