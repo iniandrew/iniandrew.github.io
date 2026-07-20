@@ -1,280 +1,262 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-    content="Andrew — Software Engineer specializing in backend systems, APIs, and cloud infrastructure.">
-  <title>Andrew</title>
-  <script>
-    document.documentElement.classList.remove("no-js");
-    document.documentElement.classList.add("js");
-  </script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrisdion Andrew — Backend Software Engineer</title>
+    <meta name="description"
+        content="Chrisdion Andrew — Backend Software Engineer specializing in PHP/Laravel and Go. Based in Surabaya, Indonesia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <!-- Neubrutalism decorative shapes -->
-  <div class="geoshape geoshape-1" aria-hidden="true"></div>
-  <div class="geoshape geoshape-2" aria-hidden="true"></div>
-  <div class="geoshape geoshape-3" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <a class="logo" href="#home" aria-label="Andrew home">
-      <span class="logo-bracket">&lt;</span>andrew<span class="logo-bracket">/&gt;</span>
-    </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-      <span class="sr-only">Toggle navigation</span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <nav id="site-nav" class="site-nav" aria-label="Primary">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#connect">Contact</a>
-      <a href="https://blog.andrew.my.id/">Blog</a>
+    <nav>
+        <div class="nav-inner">
+            <a class="brand" href="#">Chrisdion Andrew</a>
+            <div class="nav-links">
+                <a href="#experience" data-i18n="nav_exp">Experience</a>
+                <a href="#projects" data-i18n="nav_proj">Projects</a>
+                <a href="#contact" data-i18n="nav_contact">Contact</a>
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language"><b>EN</b> / ID</button>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <main id="home">
-    <section class="hero reveal">
-      <div class="hero-copy">
-        <p class="eyebrow">$ whoami</p>
-        <h1>Andrew <span class="gradient-text">Software Engineer</span></h1>
-        <p class="lead">
-          Building robust backends and elegant APIs. Passionate about clean architecture,
-          developer experience, and systems that scale.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">
-            <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
-            View Projects
-          </a>
-          <a href="#connect" class="btn btn-ghost">
-            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-            Contact Me
-          </a>
-        </div>
-      </div>
-    </section>
+    <main class="container">
 
-    <section id="about" class="section reveal">
-      <div class="section-inner">
-        <p class="eyebrow">01 / About</p>
-        <h2>About Me</h2>
-        <p>
-          I'm a software engineer with 3+ years of professional experience designing,
-          developing, and maintaining web applications. My core strength is backend
-          development, especially building systems that support real business needs without
-          becoming difficult to maintain.
-        </p>
-        <p style="margin-top: 1rem;">
-          I work primarily with Laravel, Node.js, SQL databases, Docker, and Linux-based
-          environments. I also have experience with mobile development, testing, observability,
-          and web security, which helps me think beyond just writing code and focus on how
-          systems behave in production.
-        </p>
-        <p style="margin-top: 1rem;">
-          I care about clean architecture, thoughtful problem-solving, and building software
-          that stays useful as it grows.
-        </p>
-      </div>
-    </section>
-
-    <section id="services" class="section reveal">
-      <div class="section-inner">
-        <p class="eyebrow">02 / What I Do</p>
-        <h2>What I Do</h2>
-        <ul class="service-list">
-          <li class="service-item">
-            <span>Build backend systems and REST APIs</span>
-          </li>
-          <li class="service-item">
-            <span>Develop web applications with maintainable architecture</span>
-          </li>
-          <li class="service-item">
-            <span>Design application flows and database structures</span>
-          </li>
-          <li class="service-item">
-            <span>Deploy and support services in Linux environments</span>
-          </li>
-          <li class="service-item">
-            <span>Improve reliability through testing, observability, and operational awareness</span>
-          </li>
-          <li class="service-item">
-            <span>Contribute to secure, production-ready software delivery</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="skills" class="section reveal">
-      <div class="section-inner">
-        <p class="eyebrow">03 / Skills</p>
-        <h2>Skills</h2>
-        <div class="skill-groups">
-          <div class="skill-group">
-            <h4>Web Development</h4>
-            <div class="chip-grid" role="list">
-              <span class="chip" role="listitem">Laravel</span>
-              <span class="chip" role="listitem">Node.js</span>
-              <span class="chip" role="listitem">Go</span>
-              <span class="chip" role="listitem">VueJS</span>
-              <span class="chip" role="listitem">Python</span>
+        <!-- Hero -->
+        <header class="hero">
+            <div class="eyebrow mono" data-i18n="role">Backend Software Engineer</div>
+            <h1 data-i18n="headline">Backend engineer who <em>sweats the details</em>.</h1>
+            <p class="about" data-i18n="about">3+ years shipping production applications for education, HR, and
+                sales-enablement companies — mostly PHP/Laravel and Go. I modernize legacy systems, design REST APIs,
+                and run containerized services, owning projects from system design through deployment and security
+                testing.</p>
+            <div class="hero-meta">
+                <span class="status"><span class="dot"></span><span data-i18n="status">Open to
+                        opportunities</span></span>
+                <span>Surabaya, Indonesia</span>
             </div>
-          </div>
-          <div class="skill-group">
-            <h4>Mobile Development</h4>
-            <div class="chip-grid" role="list">
-              <span class="chip" role="listitem">Flutter</span>
-              <span class="chip" role="listitem">Kotlin</span>
+            <div class="hero-cta">
+                <a class="btn" href="#contact" data-i18n="cta_contact">Get in touch</a>
+                <a class="arrow-link" href="https://github.com/iniandrew" target="_blank" rel="noopener">GitHub <span
+                        class="nw">↗</span></a>
             </div>
-          </div>
-          <div class="skill-group">
-            <h4>Infrastructure</h4>
-            <div class="chip-grid" role="list">
-              <span class="chip" role="listitem">Docker</span>
-              <span class="chip" role="listitem">Linux</span>
-              <span class="chip" role="listitem">MySQL</span>
-              <span class="chip" role="listitem">PostgreSQL</span>
+        </header>
+
+        <!-- Experience -->
+        <section class="section" id="experience">
+            <div class="section-grid">
+                <div class="section-label mono reveal" data-i18n="h_exp">Experience</div>
+                <div>
+                    <div class="xp reveal">
+                        <div class="xp-date mono" data-i18n="j1_date">Nov 2024 — Now</div>
+                        <div>
+                            <div class="xp-title" data-i18n="j1_title">Backend Developer</div>
+                            <div class="xp-org">PT Sistem Sekolah Sukses (Inosoft) · <span data-i18n="remote">Surabaya,
+                                    Remote</span></div>
+                            <p class="xp-desc" data-i18n="j1_desc">Modernizing a legacy School Management System from
+                                CodeIgniter/PHP 5.6 to Laravel, and building Broadcaster — a Go multi-channel
+                                notification service, plus deployment and security testing across the stack.</p>
+                        </div>
+                    </div>
+                    <div class="xp reveal" style="--d:.06s">
+                        <div class="xp-date mono">2020 — <span data-i18n="present">Now</span></div>
+                        <div>
+                            <div class="xp-title" data-i18n="j2_title">Freelance Software Engineer</div>
+                            <div class="xp-org" data-i18n="j2_org">Self-Employed · Remote</div>
+                            <p class="xp-desc" data-i18n="j2_desc">Hospital information system (SIMRS), a university
+                                course-scheduling app built on graph coloring, and payment gateway integrations.</p>
+                        </div>
+                    </div>
+                    <div class="xp reveal" style="--d:.12s">
+                        <div class="xp-date mono">Jul 2021 — Jun 2024</div>
+                        <div>
+                            <div class="xp-title" data-i18n="j3_title">Software Engineer</div>
+                            <div class="xp-org">PT Digital Cerdas Berbagi · <span data-i18n="j3_loc">South Tangerang,
+                                    Remote</span></div>
+                            <p class="xp-desc" data-i18n="j3_desc">Built enterprise web and mobile apps — sales
+                                performance monitoring, e-learning, and HR management — with Laravel, Vue.js, and
+                                Flutter, including full app store releases.</p>
+                        </div>
+                    </div>
+                    <div class="xp reveal" style="--d:.18s">
+                        <div class="xp-date mono">Oct 2018 — Mar 2019</div>
+                        <div>
+                            <div class="xp-title" data-i18n="j4_title">Web Developer (Internship)</div>
+                            <div class="xp-org">PT Jalameta Pilar Sinergis, Surabaya</div>
+                            <p class="xp-desc" data-i18n="j4_desc">Front-end and back-end development of client web
+                                applications, plus testing and release support.</p>
+                        </div>
+                    </div>
+                    <div class="exp-more-wrap reveal">
+                        <a class="arrow-link" href="https://linkedin.com/in/chrisdion-andrew" target="_blank"
+                            rel="noopener"><span data-i18n="exp_more">Full details on LinkedIn</span> <span
+                                class="nw">↗</span></a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="skill-group">
-            <h4>Other's</h4>
-            <div class="chip-grid" role="list">
-              <span class="chip" role="listitem">Git</span>
-              <span class="chip" role="listitem">UI/UX</span>
-              <span class="chip" role="listitem">Testing</span>
-              <span class="chip" role="listitem">Observability</span>
-              <span class="chip" role="listitem">Agile / Scrum</span>
-              <span class="chip" role="listitem">Web Penetration Testing</span>
-              <span class="chip" role="listitem">Sentiment Analysis</span>
+        </section>
+
+        <!-- Skills -->
+        <section class="section" id="skills">
+            <div class="section-grid">
+                <div class="section-label mono reveal" data-i18n="h_skills">Skills</div>
+                <div>
+                    <div class="skill-row reveal">
+                        <div class="skill-label mono" data-i18n="s1">Programming Languages</div>
+                        <div class="skill-list"><strong>PHP</strong>, <strong>Go (Golang)</strong>, JavaScript
+                            (Node.js), Python, Dart, Java</div>
+                    </div>
+                    <div class="skill-row reveal" style="--d:.05s">
+                        <div class="skill-label mono">Web Development</div>
+                        <div class="skill-list"><strong>Laravel</strong>, Fiber (Go), REST API Design, Vue.js, Tailwind
+                            CSS, jQuery</div>
+                    </div>
+                    <div class="skill-row reveal" style="--d:.1s">
+                        <div class="skill-label mono">Mobile Development</div>
+                        <div class="skill-list">Flutter, Kotlin (Android)</div>
+                    </div>
+                    <div class="skill-row reveal" style="--d:.15s">
+                        <div class="skill-label mono" data-i18n="s4">Databases &amp; Cloud</div>
+                        <div class="skill-list">MySQL, PostgreSQL, AWS, DigitalOcean Spaces (S3-Compatible Storage)
+                        </div>
+                    </div>
+                    <div class="skill-row reveal" style="--d:.2s">
+                        <div class="skill-label mono">DevOps &amp; Tools</div>
+                        <div class="skill-list">Docker, Linux, Git, <span data-i18n="s_test">Automated
+                                Testing</span>, Agile/Scrum, <span data-i18n="s_pentest">Web Penetration Testing</span>
+                        </div>
+                    </div>
+                    <div class="skill-row reveal" style="--d:.25s">
+                        <div class="skill-label mono" data-i18n="s_cert">Certifications</div>
+                        <div class="skill-list certs">Software Engineering — BNSP (2020) · Kotlin Android Developer
+                            Expert — Dicoding (2020) · AWS Cloud Practitioner Essentials — Dicoding (2024) · Cyber
+                            Security Academy Independent Study Program — IDS Training &amp; Certification (2026)</div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <div class="section-grid">
+                <div class="section-label mono reveal" data-i18n="h_proj">Projects</div>
+                <div>
+                    <p class="proj-note reveal" data-i18n="proj_note">Most of these are <em>proprietary systems</em>
+                        built for employers and clients, so the source code isn't publicly available.</p>
+
+                    <div class="proj reveal">
+                        <div class="proj-idx mono">01</div>
+                        <div class="proj-main">
+                            <span class="proj-title">Broadcaster</span>
+                            <p class="proj-desc" data-i18n="p1">Multi-channel notification service consolidating several
+                                third-party messaging providers behind a single API.</p>
+                            <div class="proj-role"><span data-i18n="role_label">Role</span>: Backend Development, API
+                                Design</div>
+                        </div>
+                        <div class="proj-stack mono">Go · Fiber · Docker</div>
+                    </div>
+
+                    <div class="proj reveal" style="--d:.05s">
+                        <div class="proj-idx mono">02</div>
+                        <div class="proj-main">
+                            <span class="proj-title" data-i18n="p2_t">School Information Management System</span>
+                            <p class="proj-desc" data-i18n="p2">End-to-end platform for student affairs, academics,
+                                school finance, and new student admissions.</p>
+                            <div class="proj-role"><span data-i18n="role_label">Role</span>: Backend Development,
+                                Frontend Integration, Deployment</div>
+                        </div>
+                        <div class="proj-stack mono">PHP · Laravel · Vue.js</div>
+                    </div>
+
+                    <div class="proj reveal" style="--d:.1s">
+                        <div class="proj-idx mono">03</div>
+                        <div class="proj-main">
+                            <span class="proj-title" data-i18n="p3_t">HR Management System</span>
+                            <p class="proj-desc" data-i18n="p3">Integrated web and mobile platform for employee data,
+                                payroll, and HR self-service.</p>
+                            <div class="proj-role"><span data-i18n="role_label">Role</span>: Full-stack Collaboration,
+                                Mobile Development, API Integration</div>
+                        </div>
+                        <div class="proj-stack mono">Laravel · Vue.js · Flutter</div>
+                    </div>
+
+                    <div class="proj reveal" style="--d:.15s">
+                        <div class="proj-idx mono">04</div>
+                        <div class="proj-main">
+                            <span class="proj-title" data-i18n="p4_t">Sales Activity Performance Monitoring</span>
+                            <p class="proj-desc" data-i18n="p4">Field sales activity tracking and performance analytics
+                                for management reporting.</p>
+                            <div class="proj-role"><span data-i18n="role_label">Role</span>: Full-stack Collaboration
+                            </div>
+                        </div>
+                        <div class="proj-stack mono">PHP · Laravel · Vue.js</div>
+                    </div>
+
+                    <div class="proj reveal" style="--d:.2s">
+                        <div class="proj-idx mono">05</div>
+                        <div class="proj-main">
+                            <span class="proj-title" data-i18n="p5_t">LinkAja Payment Integration</span>
+                            <p class="proj-desc" data-i18n="p5">Host-to-Host (H2H) integration of LinkAja payment into
+                                an existing client application, expanding its available payment channels.</p>
+                            <div class="proj-role"><span data-i18n="role_label">Role</span>: Backend Development, API
+                                Integration</div>
+                        </div>
+                        <div class="proj-stack mono">PHP · Laravel · Docker</div>
+                    </div>
+
+                    <div class="proj reveal" style="--d:.25s">
+                        <div class="proj-idx mono">06</div>
+                        <div class="proj-main">
+                            <span class="proj-title" data-i18n="p6_t">Hospital Information System (SIMRS)</span>
+                            <p class="proj-desc" data-i18n="p6">Hospital management information system with an
+                                integrated patient queue system, plus the hospital's public landing page.</p>
+                            <div class="proj-role"><span data-i18n="role_label">Role</span>: Solo Full-stack Development
+                            </div>
+                        </div>
+                        <div class="proj-stack mono">PHP · Laravel · MySQL</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="section-grid">
+                <div class="section-label mono reveal" data-i18n="h_contact">Contact</div>
+                <div>
+                    <h2 class="contact-head reveal" data-i18n="contact_big">Let's build something <em>solid</em>.</h2>
+                    <p class="contact-blurb reveal" data-i18n="contact_blurb">Open to backend engineering opportunities
+                        and freelance projects. The fastest way to reach me is by email.</p>
+                    <a class="email-link reveal" href="mailto:iniandrewrp@gmail.com">iniandrewrp@gmail.com</a>
+                    <div class="socials mono reveal">
+                        <a href="https://github.com/iniandrew" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://linkedin.com/in/chrisdion-andrew" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://andrew.my.id">andrew.my.id</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div>© <span id="year"></span> Chrisdion Andrew</div>
+            <div class="footer-time">Surabaya · <span id="clock">--:--</span> WIB</div>
         </div>
-      </div>
-    </section>
+    </footer>
 
-    <section id="projects" class="section reveal">
-      <div class="section-inner">
-        <p class="eyebrow">04 / Projects</p>
-        <h2>Some of My Professional Projects</h2>
-        <div class="project-slider">
-          <div class="project-track">
-            <article class="project-card">
-              <h3>Broadcaster</h3>
-              <p>A Go service for multi-channel notification delivery and provider integrations. </p>
-              <div class="project-meta">
-                <span><strong>Stack:</strong> Go, Fiber, Docker</span>
-                <span><strong>Role:</strong> Backend Development, API Design</span>
-              </div>
-            </article>
-            <article class="project-card">
-              <h3>School Information Management</h3>
-              <p>A web application that provides complete school management capabilities including student affairs,
-                academic management, finance, new student registration, and more.</p>
-              <div class="project-meta">
-                <span><strong>Stack:</strong> PHP, Laravel, Vue.js, Docker</span>
-                <span><strong>Role:</strong> Backend Development, Frontend Integration, Deployment</span>
-              </div>
-            </article>
-            <article class="project-card">
-              <h3>Sales Activity Performance Monitoring</h3>
-              <p>A web application for monitoring and analyzing sales activities and performance metrics.</p>
-              <div class="project-meta">
-                <span><strong>Stack:</strong> PHP, Laravel, Vue.js, Docker</span>
-                <span><strong>Role:</strong> Full-stack Collaboration</span>
-              </div>
-            </article>
-            <article class="project-card">
-              <h3>Learning Management System</h3>
-              <p>A web application for managing and delivering educational content and tracking student progress.</p>
-              <div class="project-meta">
-                <span><strong>Stack:</strong> PHP, Laravel, Vue.js, Docker</span>
-                <span><strong>Role:</strong> Full-stack Collaboration</span>
-              </div>
-            </article>
-            <article class="project-card">
-              <h3>Human Resources Management System</h3>
-              <p>A web application and mobile application for managing employee information, payroll, and other
-                HR-related tasks.</p>
-              <div class="project-meta">
-                <span><strong>Stack:</strong> PHP, Laravel, Vue.js, Flutter, Docker</span>
-                <span><strong>Role:</strong> Full-stack Collaboration, Mobile Development, API Integration</span>
-              </div>
-            </article>
-            <article class="project-card">
-              <h3>Payment Integration</h3>
-              <p>A project that focuses on integration open API's from providers to internal systems.</p>
-              <div class="project-meta">
-                <span><strong>Stack:</strong> PHP, Laravel, Docker</span>
-                <span><strong>Role:</strong> Backend Development, API Integration</span>
-              </div>
-            </article>
-          </div>
-          <div class="slider-controls">
-            <button class="slider-btn prev" aria-label="Previous project">
-              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
-            </button>
-            <div class="slider-dots"></div>
-            <button class="slider-btn next" aria-label="Next project">
-              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+    <script src="script.js" defer></script>
 
-    <!-- <section id="philosophy" class="section reveal">
-      <div class="section-inner">
-        <p class="eyebrow">05 / Philosophy</p>
-        <h2>Quote</h2>
-        <blockquote>
-          <p>"Better to ask and be a fool once than never to ask and be a fool forever. - Unknown"</p>
-        </blockquote>
-        <p>
-          I value clarity, curiosity, and practical execution. I believe good engineering is
-          not only about writing code, but about asking the right questions, making sensible
-          decisions, and building systems that people can rely on.
-        </p>
-      </div>
-    </section> -->
-
-    <section id="connect" class="section reveal">
-      <div class="section-inner">
-        <p class="eyebrow">05 / Let's Connect</p>
-        <h2>Let's Connect</h2>
-        <p>
-          I'm always open to new opportunities, collaborations, or just chatting about tech. Feel free to reach out
-          through any of the platforms below.
-        </p>
-        <div class="contact-grid">
-          <a href="https://github.com/iniandrew" class="contact-item">
-            <i class="fa-brands fa-github" aria-hidden="true"></i>
-            <span>GitHub</span>
-          </a>
-          <a href="https://linkedin.com/in/chrisdion-andrew" class="contact-item">
-            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-            <span>LinkedIn</span>
-          </a>
-          <a href="mailto:hi@andrew.my.id" class="contact-item">
-            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
-            <span>Email</span>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Andrew.</p>
-  </footer>
-
-  <script src="script.js" defer></script>
 </body>
 
 </html>
